@@ -3,8 +3,7 @@ const cities = require('./cities');
 const { places, descriptors } = require('./seedHelpers');
 const Campground = require('../models/campground');
 const dbUrl = process.env.MONGO_URL;
-console.log(dbUrl);
-mongoose.connect('mongodb+srv://abhi412:@bhi412@cluster0.9ijs7jl.mongodb.net/', {
+mongoose.connect('mongodb+srv://abhi_412:abhi_412@cluster0.ir0rwxd.mongodb.net/', {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
@@ -28,7 +27,7 @@ const seedDB = async () => {
         const price = Math.floor(Math.random() * 20) + 10;
         const camp = new Campground({
             //YOUR USER ID
-            author: '648f1474960591661cb3028a',
+            author: '658e7d051a64a16cfce91bf7',
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             title: `${sample(descriptors)} ${sample(places)}`,
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolores vero perferendis laudantium, consequuntur voluptatibus nulla architecto, sit soluta esse iure sed labore ipsam a cum nihil atque molestiae deserunt!',
